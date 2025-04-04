@@ -46,10 +46,3 @@ window.addEventListener("scroll", function () {
  */
 const contactForm = document.getElementById("contact-form");
 
-contactForm.addEventListener("submit", function (e) {
-  e.preventDefault(); 
-  alert(
-    "Your message has been sent successfully. We will get back to you shortly!"
-  );
-  contactForm.reset(); /
-});

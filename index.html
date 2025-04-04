@@ -169,18 +169,19 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle">I'm a Developer</p>
+            <p class="section-subtitle">Tech for Purpose</p>
 
-            <h2 class="h2 section-title">I Develop Application that Help People</h2>
+            <h2 class="h2 section-title">Empowering People Through Code and Collaboration</h2>
 
             <p class="section-text">
-             I'm a front-end web developer passionate about crafting engaging user experiences. I specialize in HTML5, CSS3, JavaScript, and modern frameworks to build responsive, user-friendly websites.
-              Currently expanding my skills with Python Django to venture into full-stack development.
+              I'm a multidisciplinary technologist with experience in front-end development, project coordination, and user research. 
+              I believe in building technology that empowers, educates, and elevates communities — not just products.
 
             </p>
 
             <p class="section-text">
-              Let's create something Impactful Together
+              With a foundation in HTML, CSS, JavaScript, and Python, and a growing interest in full-stack development, 
+              I enjoy solving real-world problems with thoughtful design and collaborative energy.
             </p>
 
             <a href="https://github.com/sumshy" class="btn btn-primary blue" target="_blank">View Portfolio</a>
@@ -191,12 +192,47 @@
         </div>
       </section>
 
+      <!--
+  - #EDUCATION & INTERESTS
+-->
+
+<section class="section about" id="education">
+  <div class="container">
+
+    <figure class="about-banner">
+      <img src="./assets/images/portfolio-4.jpg" width="800" height="652" loading="lazy" alt="education image"
+        class="img-cover">
+      <img src="./assets/images/pyt.jpg" width="800" height="717" loading="lazy" alt="interest image"
+        class="abs-img">
+    </figure>
+
+    <div class="about-content">
+
+      <p class="section-subtitle">Education and Interests</p>
+
+      <h2 class="h2 section-title">Learning With Purpose, Building With Passion</h2>
+
+      <p class="section-text">
+        I hold a BSc (Hons) in Computing from Glasgow Caledonian University through ALC Mauritius. My academic background laid a solid 
+        foundation in software development, systems analysis, and practical problem solving.
+      </p>
+
+      <p class="section-text">
+        I’m deeply passionate about building technology that bridges gaps in society. My professional interests include web development, full-stack applications, and tech for social good. 
+        I thrive in collaborative environments where ideas turn into impactful solutions.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
 
 
 
 
       <!-- 
-        - #PORTFOLIO
+        - #Project
       -->
 
       <section class="section portfolio" id="projects">
@@ -379,9 +415,6 @@
       </section>
 
 
-
-
-
       <!-- 
         - #CONTACT
       -->
@@ -397,12 +430,23 @@
 
             <div class="wrapper">
 
-              <form id="contact-form" class="contact-form">
+              <form id="contact-form" class="contact-form" action="https://formspree.io/f/mrbpyrza" method="POST">
                 <input type="text" name="name" placeholder="Name" required class="contact-input">
+                
                 <input type="email" name="email" placeholder="Email" required class="contact-input">
+                
                 <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+                
+                <!-- Optional subject line for your email -->
+                <input type="hidden" name="_subject" value="New message from your portfolio!">
+                
+                <!-- Optional thank you redirect -->
+                <!-- <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html"> -->
+              
                 <button type="submit" class="btn-submit">Submit Message</button>
               </form>
+              
+              
 
               <ul class="contact-list">
 
