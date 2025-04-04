@@ -1,9 +1,7 @@
-'use strict';
-
-
+"use strict";
 
 /**
- * navbar toggle
+ * navbar on hover demands
  */
 
 const header = document.querySelector("[data-header]");
@@ -15,7 +13,7 @@ navToggleBtn.addEventListener("click", function () {
 });
 
 /**
- * toggle the navbar when click any navbar link
+ * Close navbar on link click
  */
 
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -27,12 +25,8 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-
-
-
-
 /**
- * back to top & header
+ * back to top & sticky header
  */
 
 const backTopBtn = document.querySelector("[data-back-to-top]");
@@ -45,4 +39,17 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
+});
+
+/**
+ * Contact form: show alert on submission
+ */
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault(); 
+  alert(
+    "Your message has been sent successfully. We will get back to you shortly!"
+  );
+  contactForm.reset(); /
 });
